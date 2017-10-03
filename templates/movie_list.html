@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Movie List</title>
+  </head>
+
+  <body>
+
+    <h1>Movies</h1>
+
+    <ul>
+    {% for movie in movies %}
+      <li><a href="/movie/{{ movie['title'] }}">{{ movie['title'] }} ({{ movie['released'] }})</a></li>
+    {% endfor %}
+    </ul>
+
+  </body>
+
+</html>
+
